@@ -1,4 +1,5 @@
 {
     "PORT" : 7000,
-    "jwtSecret":"key hack Zyf"
+    "jwtSecret":"key hack Zyf",
+    "baseUrl" : "https://localhost:7000/"
 }

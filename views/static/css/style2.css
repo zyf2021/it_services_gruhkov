@@ -1,0 +1,200 @@
+body{
+    background-color: #E5E5E5;
+}
+.nav_txt{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+
+/* Black */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 2px;
+}
+.nav_txt_2{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+padding-left: 300px;
+}
+.nav_bord {
+    background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.data{
+    background-color: #FFFFFF;
+    position: absolute;
+width: 1245px;
+height: 595px;
+left: 603px;
+top: 260px;
+border: 1px solid #000000;
+}
+.photo {
+    position: absolute;
+width: 415px;
+height: 452px;
+left: 87px;
+top: 260px;
+border: 1px solid #000000;
+
+background-color: #FFFFFF;
+}
+.photo_text{
+    position: absolute;
+    width: 326px;
+height: 250px;
+left: 50px;
+top: 350px;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+
+}
+
+.pic{
+    position: absolute;
+    
+    width: 236px;
+height: 248px;
+left: 89px;
+top: 55px;
+
+background: #D2F4FF;
+
+}
+
+.pic_txt{
+    position: absolute;
+width: 65px;
+height: 39px;
+left: 86px;
+top: 101px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+}
+
+.name{
+    position: absolute;
+width: 330px;
+height: 63px;
+left: 77px;
+top: 57px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+
+
+border-bottom: 2px solid black;
+}
+ .birth{
+    position: absolute;
+    width: 333px;
+    height: 63px;
+    left: 77px;
+    top: 178px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 2px solid black;
+ }
+ .tel{
+    position: absolute;
+    width: 333px;
+    height: 63px;
+    left: 467px;
+    top: 178px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 2px solid black;
+ }
+ .postup{
+    position: absolute;
+    width: 350px;
+    height: 63px;
+    left: 857px;
+    top: 178px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 2px solid black;
+ }
+ .mail{
+    position: absolute;
+    width: 1130px;
+    height: 63px;
+    left: 80px;
+    top: 282px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 2px solid black;
+ }
+.vhod{
+    position: absolute;
+width: 1130px;
+height: 81px;
+left: 80px;
+top: 374px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+border-bottom: 2px solid black;
+}
+.role{
+
+    position: absolute;
+    width: 333px;
+    height: 63px;
+    left: 80px;
+    top: 484px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 2px solid black;
+}
