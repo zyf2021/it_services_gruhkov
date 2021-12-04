@@ -1,31 +1,40 @@
 const express = require('express')
-//const config = require('config')
+const config = require('config')
 const https = require('https')
 const fs = require('fs')
 const path = require('path')
+const db = require("./models")
 
 const app = express()
-const directoryToServe = 'client' //???
+const port = config.get('PORT')||8080
 
+app.use(express.json({extended:true}))
 
-
-const host = '127.0.0.1';
-const port = 7000;
+app.use('/api/auth', require('./routes/auth.routes.js'))
+//app.use('/api/user', require('./routes/user.routes'))
+/*app.use('/api/request', require('./routes/request.routes'))*/
 
 //app.use('/', express.static(path.join(__dirname, '..', directoryToServe)))
 
 app.get('/', (req,res)=>{
-    res.send('Hell HTTPS!')
+    res.send('HTTPS!!!!')
 })
 
 const httpsOptions = {
     cert: fs.readFileSync('server.cert'),
     key: fs.readFileSync('server.key')
 }
+db.sequelize.sync().then(result=>{
+  console.log(result);
+})
+.catch(err=> console.log(err))
 
+//{force: true}
 
 https
   .createServer(httpsOptions, app)
   .listen(port, function () {
-    console.log(`Server listens ${directoryToServe}/ directory at https://localhost:${port}`)
+    console.log(`Server listens at https://localhost:${port}`)
   })
+
+
