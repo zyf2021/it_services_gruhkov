@@ -6,7 +6,7 @@ const config = require('config')
 module.exports = async (req, res, next) => {
     try {
         const user = await User.findOne({_id: req.user.userId})
-        if (user.role !== "Admin"){
+        if (user.role !== "ADMIN"){
             return res.status(500).json({message:"Права администратора недоступны"})
         }
         next()

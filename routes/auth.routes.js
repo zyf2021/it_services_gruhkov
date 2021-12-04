@@ -17,6 +17,7 @@ router.post('/register',
     [
         check('first_name', 'Введите имя').notEmpty(),
         check('last_name', 'Введите фамилию').notEmpty(),
+        check('middle_name', 'Введите отчество').notEmpty(),
         check('email', 'Некорректный email').isEmail(),
         check('password','Минимальная длина пароля 6 символов').isLength({min:6})
     ],
@@ -45,7 +46,7 @@ router.post('/register',
                 l_name:last_name,
                 m_name:middle_name,
                 email,
-                role:"USER",
+                role:role,//"USER"
                 password:hashedPassword
             })
             res.status(201).json({message:'Пользователь создан'})
