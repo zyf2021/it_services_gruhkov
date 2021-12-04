@@ -27,7 +27,7 @@ const request_userControllers = {
         try {
             const now = new Date() 
             const {id} = req.body
-            const request = await Request_update({date_load: now},{
+            const request = await Request_User.update({date_load: now},{
                 where:{
                     id:id
                 }
@@ -40,7 +40,8 @@ const request_userControllers = {
     //NOT USER !!!!!!
     getUserRequests: async (req, res) => {
         try {
-            const request = await Request_User.findByPk(req.user.userId)
+            const {id} = req.body
+            const request = await Request_User.findByPk(id)
             //const user = await Users.findById({_id:req.user.userId}).select('-password')
             //console.log("USER", user)
             res.json(request)
